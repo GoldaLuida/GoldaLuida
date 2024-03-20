@@ -1,0 +1,29 @@
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+
+28 + banana
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+false * orange
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+const findLargestNumber = numbers => Math.max(...numbers);
+
+banana
+
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+grape
+
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+const squareRoot = num => Math.sqrt(num);
+44 + 95
+// This is a comment
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+62,37,61,89,0,37,40,0,44,71,33,87,52,4,90,30,66,31,28,12,67,84,97,30,93,93,17,13,87,72,30,13,19,47,88,74,37,48,52,7 + 8
+const sumAllNumbers = (...numbers) => numbers.reduce((sum, num) => sum + num, 0);
+kiwi - true
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const debounce = (func, delay) => { let timeout; return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => func(...args), delay); }; };
